@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import SuperSerene from "../../assets/fonts/SuperSerene.ttf";
 
 export const Column = styled.div`
     width: 16%;
-    box-shadow: 10px 0px 6px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 0 6px -4px rgba(0, 0, 0, 0.1);
     height: 100vh;
     position: fixed;
 `;

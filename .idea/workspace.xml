@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fef6697-10b5-4eb5-a984-d963931b65a7" name="Changes" comment="Setting up react app">
+    <list default="true" id="1fef6697-10b5-4eb5-a984-d963931b65a7" name="Changes" comment="Vertical nav bar">
       <change afterPath="$PROJECT_DIR$/ellasyoung/src/assets/fonts/SuperSerene.ttf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ellasyoung/src/assets/fonts/bungalow.otf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ellasyoung/src/components/BodyCol/BodyColElements.js" afterDir="false" />
@@ -105,7 +105,7 @@
       <workItem from="1745336117171" duration="6846000" />
       <workItem from="1745348151204" duration="469000" />
       <workItem from="1745348869648" duration="5077000" />
-      <workItem from="1745353967285" duration="2613000" />
+      <workItem from="1745353967285" duration="2779000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up react app">
       <option name="closed" value="true" />
@@ -123,7 +123,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setting up react app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up react app" />
+    <MESSAGE value="Vertical nav bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vertical nav bar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
