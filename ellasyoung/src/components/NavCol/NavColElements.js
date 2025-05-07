@@ -5,6 +5,8 @@ export const Column = styled.div`
     box-shadow: 10px 0 6px -4px rgba(0, 0, 0, 0.1);
     height: 100vh;
     position: fixed;
+    z-index: 1000;
+    background-color: white;
 `;
 
 export const Logo = styled.a`
