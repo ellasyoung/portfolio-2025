@@ -1,51 +1,63 @@
 import styled from "styled-components";
+import { offWhite, black, shadowLight, shadowDark } from "../../constants/colors";
 
 export const Column = styled.div`
     width: 16%;
-    box-shadow: 10px 0 6px -4px rgba(0, 0, 0, 0.1);
-    height: 100vh;
+    //box-shadow: -20px 20px 50px ${shadowLight}, 20px 20px 50px ${shadowDark};
+    box-shadow: -6px 6px 10px ${shadowLight}, 6px 6px 10px ${shadowDark};
+    height: 92vh;
+    margin: 4vh;
     position: fixed;
     z-index: 1000;
-    background-color: white;
+    background-color: ${offWhite};
+    border-radius: 25px;
 `;
 
 export const Logo = styled.a`
     font-family: 'Bungalow', sans-serif;
+    margin-left: 25%;
     font-size: 90px;
-    margin-bottom: 25px;
-    color: black;
+    margin-bottom: 35px;
+    color: ${black};
     text-decoration: none;
 `;
 
 export const NavLink = styled.a`
-    font-size: 14px;
+    font-size: 12px;
+    letter-spacing: 2px;
     text-decoration: none;
-    color: black;
-    position: relative; 
-    &::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background-color: black;
-        position: absolute;
-        left: 0;
-        bottom: -5px; 
-        transition: width 0.3s ease; 
-    }
+    color: ${black};
+    position: relative;
+    margin-left: 20px;
 `;
 
 export const NavLinkCont = styled.div`
-    margin-bottom: 15px;
-    margin-left: -5px;
-    &:hover ${NavLink}::after {
-        width: 100%; // Expand the line to full width on hover
+    margin-bottom: 25px;
+    height: 40px;
+    width: 70%;
+    display: flex; 
+    align-items: center;
+    justify-content: left;
+    background-color: ${offWhite};
+    border-radius: 10px;
+    box-shadow: -2px 2px 6px ${shadowLight}, 2px 2px 6px ${shadowDark};
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: inset -3px 3px 6px ${shadowLight}, inset 3px 3px 6px ${shadowDark};
     }
 `;
 
 export const NavCont = styled.div`
-    margin-left: 25%;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+`;
+
+export const NavLinks = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 `;

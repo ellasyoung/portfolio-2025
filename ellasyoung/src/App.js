@@ -3,6 +3,7 @@ import HomePage from './components/HomePage';
 import SuperSerene from './assets/fonts/SuperSerene.ttf'
 import Bungalow from './assets/fonts/bungalow.otf'
 import { createGlobalStyle } from "styled-components";
+import { offWhite } from "./constants/colors";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -24,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: ${offWhite};
   }
 `;
 
