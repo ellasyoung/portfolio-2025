@@ -1,6 +1,6 @@
 export const colors = {
     // Primary colors
-    offWhite: 'rgba(232, 232, 240, 1)',
+    offWhite: 'rgba(215, 215, 225, 1)',
     white: '#FFFFFF',
     black: '#000000',
   
@@ -9,7 +9,7 @@ export const colors = {
   
     // Shadow colors
     shadowLight: '#FFFFFF',
-    shadowDark: 'rgba(197, 197, 200, 1)',
+    shadowDark: 'rgba(174, 174, 182, 1)',
 
 };
 

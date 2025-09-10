@@ -3,9 +3,9 @@ import { offWhite, black, shadowLight, shadowDark } from "../../constants/colors
 
 export const Column = styled.div`
     width: 16%;
-    //box-shadow: -20px 20px 50px ${shadowLight}, 20px 20px 50px ${shadowDark};
-    box-shadow: -6px 6px 10px ${shadowLight}, 6px 6px 10px ${shadowDark};
+    box-shadow: -6px 6px 10px ${shadowLight}, 6px 0px 10px ${shadowDark};
     height: 92vh;
+    min-height: 450px;
     margin: 4vh;
     position: fixed;
     z-index: 1000;
@@ -40,17 +40,17 @@ export const NavLinkCont = styled.div`
     justify-content: left;
     background-color: ${offWhite};
     border-radius: 10px;
-    box-shadow: -2px 2px 6px ${shadowLight}, 2px 2px 6px ${shadowDark};
+    box-shadow: -2px 2px 6px ${shadowLight}, 2px 0px 6px ${shadowDark};
     cursor: pointer;
     &:hover,
     &:focus {
         outline: none;
-        box-shadow: inset -3px 3px 6px ${shadowLight}, inset 3px 3px 6px ${shadowDark};
+        box-shadow: inset -3px 3px 6px ${shadowLight}, inset 3px 0px 6px ${shadowDark};
     }
 `;
 
 export const NavCont = styled.div`
-    margin-top: 60px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 `;
