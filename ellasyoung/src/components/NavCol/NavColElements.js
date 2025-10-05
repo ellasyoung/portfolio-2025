@@ -6,7 +6,7 @@ export const Column = styled.div`
     box-shadow: -6px 6px 10px ${shadowLight}, 6px 0px 10px ${shadowDark};
     height: 92vh;
     min-height: 450px;
-    margin: 4vh;
+    margin: 35px;
     position: fixed;
     z-index: 1000;
     background-color: ${offWhite};

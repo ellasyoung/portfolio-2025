@@ -1,8 +1,15 @@
 import StarterPack from "../StarterPack";
+import ProfilePic from "../ProfilePic"
+import {HeroContainer} from "./HeroElements";
 
 const Hero = () => {
     return (
-        <><StarterPack/></>
+        <>
+            <HeroContainer>
+                <StarterPack/>
+                <ProfilePic/>
+            </HeroContainer>
+        </>
     );
 };
 

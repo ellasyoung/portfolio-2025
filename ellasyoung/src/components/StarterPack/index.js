@@ -8,7 +8,7 @@ const StarterPack = () => {
                 <Title>my starter pack</Title>
             </TitleCont>
             <InnerCont>
-                <img src={starterPackImg} alt="Starter Pack" style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '25px'}} />
+                <img src={starterPackImg} alt="Starter Pack" style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '25px', marginTop: '5px'}} />
             </InnerCont>
         </Container>
     );

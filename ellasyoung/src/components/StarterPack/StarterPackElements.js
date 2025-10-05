@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { offWhite, black, shadowLight, shadowDark } from "../../constants/colors";
 
 export const Container = styled.div`
-    width: 40%;
+    width: 50%;
     box-shadow: -6px 6px 10px ${shadowLight}, 6px 0px 10px ${shadowDark};
     height: 350px;
-    margin: 4vh 2vh;
+    margin: 35px;
     background-color: ${offWhite};
     border-radius: 25px;
     display: flex;
