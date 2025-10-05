@@ -1,15 +1,18 @@
+import {HeroContainer, Row} from "./HeroElements";
+
 import StarterPack from "../StarterPack";
 import ProfilePic from "../ProfilePic"
-import {HeroContainer} from "./HeroElements";
+import PlaySong from "../PlaySong";
 
 const Hero = () => {
     return (
-        <>
-            <HeroContainer>
+        <HeroContainer>
+            <Row>
                 <StarterPack/>
                 <ProfilePic/>
-            </HeroContainer>
-        </>
+            </Row>
+            <PlaySong />
+        </HeroContainer>
     );
 };
 

@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-export const HeroContainer = styled.div`
+export const Row = styled.div`
     display: flex;
     flex-direction: row;
-    height: 100vh;
+`;
+
+export const HeroContainer = styled.div`
+    display: flex;
+    flex-direction: column;
 `;
