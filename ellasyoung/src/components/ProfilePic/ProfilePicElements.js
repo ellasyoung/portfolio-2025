@@ -12,6 +12,8 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 30;
 `;
 
 export const PicContainer = styled.div`

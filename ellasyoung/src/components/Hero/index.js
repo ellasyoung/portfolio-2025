@@ -1,8 +1,10 @@
-import {HeroContainer, Row} from "./HeroElements";
+import {HeroContainer, Row, Title} from "./HeroElements";
 
 import StarterPack from "../StarterPack";
 import ProfilePic from "../ProfilePic"
 import PlaySong from "../PlaySong";
+
+//<Title className="lastName">Young</Title>
 
 const Hero = () => {
     return (
@@ -12,6 +14,8 @@ const Hero = () => {
                 <ProfilePic/>
             </Row>
             <PlaySong />
+            <Title className="firstName">Ella</Title>
+            <Title className="lastName">Young</Title>
         </HeroContainer>
     );
 };

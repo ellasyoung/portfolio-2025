@@ -12,6 +12,8 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 10;
 `;
 
 export const SongInfo = styled.div`
