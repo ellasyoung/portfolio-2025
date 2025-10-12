@@ -8,6 +8,7 @@ export const Logo = styled.a`
     margin-bottom: 35px;
     color: ${black};
     text-decoration: none;
+    cursor: pointer;
 `;
 
 export const NavCont = styled.div`

@@ -24,4 +24,9 @@ export const Button = styled.div`
         outline: none;
         box-shadow: inset -3px 3px 6px ${shadowLight}, inset 3px 0px 6px ${shadowDark};
     }
+
+    ${props => props.isActive && `
+        outline: none;
+        box-shadow: inset -3px 3px 6px ${shadowLight}, inset 3px 0px 6px ${shadowDark};
+    `}
 `;

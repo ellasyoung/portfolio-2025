@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container as StyledContainer } from './ContainerElements';
 
-const Container = ({ width, height, minWidth, minHeight, borderRadius, margin, position, zIndex, children, onClick, ...props }) => {
+const Container = ({ width, height, minWidth, minHeight, borderRadius, margin, position, zIndex, children, ...props }) => {
     return (
         <StyledContainer
             width={width}
@@ -12,7 +12,6 @@ const Container = ({ width, height, minWidth, minHeight, borderRadius, margin, p
             margin={margin}
             position={position}
             zIndex={zIndex}
-            onClick={onClick}
             {...props}
         >
             {children}
