@@ -55,7 +55,7 @@ const NavCol = () => {
                 width="230px"
                 height="92vh"
                 minHeight="530px"
-                margin="35px"
+                margin="35px 35px 35px 0"
                 position="fixed"
                 zIndex="1000"
             >
