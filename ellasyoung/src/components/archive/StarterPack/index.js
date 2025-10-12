@@ -1,5 +1,5 @@
 import {Container, InnerCont, TitleCont, Title} from "./StarterPackElements";
-import starterPackImg from "../../assets/images/starter-pack.png";
+import starterPackImg from "../../../assets/images/starter-pack.png";
 
 const StarterPack = () => {
     return (

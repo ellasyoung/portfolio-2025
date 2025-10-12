@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { offWhite, black, shadowLight, shadowDark } from "../../constants/colors";
+import { offWhite, black, shadowLight, shadowDark } from "../../../../../../constants/colors";
 
 export const Row = styled.div`
     display: flex;
@@ -9,6 +9,7 @@ export const Row = styled.div`
 export const HeroContainer = styled.div`
     display: flex;
     flex-direction: column;
+    height: 100vh;
 `;
 
 export const Title = styled.p`
@@ -18,16 +19,14 @@ export const Title = styled.p`
     position: absolute;
     
     &.firstName {
-        font-size: 425px;
-        top: 60px;
-        right: 140px;
-        z-index: 20;
+        font-size: 400px;
+        top: 50px;
+        right: 50px;
     }
     
     &.lastName {
-        font-size: 425px;
-        z-index: 5;
-        top: 400px;
+        font-size: 400px;
+        top: 300px;
         right: 50px;
     }
 `;

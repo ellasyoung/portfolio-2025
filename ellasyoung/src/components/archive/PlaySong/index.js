@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import {Container, Title, Text, SongInfo, SongCont, AblumCover, IconButton, ProgressContainer, ProgressFilled, ProgressThumb, Row} from "./PlaySongElements";
-import albumCover from "../../assets/images/melodrama-album-cover.png";
-import playButton from "../../assets/icons/play-button.png";
-import pauseButton from "../../assets/icons/pause-button.png";
+import albumCover from "../../../assets/images/melodrama-album-cover.png";
+import playButton from "../../../assets/icons/play-button.png";
+import pauseButton from "../../../assets/icons/pause-button.png";
 
 const YT_VIDEO_ID = "dMK_npDG12Q";
 

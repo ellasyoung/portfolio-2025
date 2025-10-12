@@ -1,5 +1,5 @@
 import {Container, PicContainer, Title, Text, TextCol} from "./ProfilePicElements";
-import profilePic from "../../assets/images/headshot.png";
+import profilePic from "../../../assets/images/headshot.png";
 
 const ProfilePic = () => {
     return (

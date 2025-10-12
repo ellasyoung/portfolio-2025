@@ -1,5 +1,5 @@
 import { Column } from "./BodyColElements";
-import Hero from "../Hero";
+import Hero from "../../hero-section/Hero";
 
 const BodyCol = () => {
     return (

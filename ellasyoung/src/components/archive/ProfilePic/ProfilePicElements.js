@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { offWhite, black, shadowLight, shadowDark } from "../../constants/colors";
+import {black, offWhite, shadowDark, shadowLight} from "../../../constants/colors";
 
 export const Container = styled.div`
     width: 37%;

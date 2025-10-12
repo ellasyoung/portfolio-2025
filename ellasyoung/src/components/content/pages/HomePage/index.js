@@ -1,6 +1,6 @@
 import {PageContainer} from "./HomePageElements";
-import NavCol from "../NavCol";
-import BodyCol from "../BodyCol";
+import NavCol from "../home-page/columns/NavCol";
+import BodyCol from "../home-page/columns/BodyCol";
 
 const HomePage = () => {
     return (
