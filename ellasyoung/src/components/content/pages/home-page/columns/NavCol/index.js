@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { NavCont, NavLinks } from "./NavColElements";
+
 import Container from "../../../../../common/Container";
-import {Logo, NavCont, NavLinks} from "./NavColElements";
 import Button from "../../../../../common/Button";
 import Text from "../../../../../common/text/Text"
+import Title from "../../../../../common/text/Title";
 
 const links = [
     {name: "hero"},
@@ -46,14 +48,22 @@ const NavCol = () => {
     return (
             <Container 
                 width="16%"
+                minWidth="180px"
                 height="92vh"
+                minHeight="450px"
                 margin="35px"
                 position="fixed"
-                minHeight="450px"
                 zIndex="1000"
             >
                 <NavCont>
-                    <Logo onClick={() => navLinkOnClick(links[0].name)}>ey</Logo>
+                    <Title
+                        margin="0 0 35px 55px"
+                        fontSize="90px"
+                        cursor="pointer"
+                        onClick={() => navLinkOnClick(links[0].name)}
+                    >
+                        ey
+                    </Title>
                     <NavLinks>
                         {links.map((link, index) => index != 0 && (
                             <Button

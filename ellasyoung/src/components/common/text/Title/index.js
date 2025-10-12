@@ -1,19 +1,21 @@
 import React from 'react';
-import { StyledText } from "./TextElements";
+import { StyledTitle } from "./TitleElements";
 
-const Text = ({ fontSize, fontWeight, textDecoration, margin, padding, children, ...props }) => {
+const Text = ({ fontSize, fontWeight, textDecoration, margin, padding, children, cursor, onClick, ...props }) => {
 
     return (
-        <StyledText
+        <StyledTitle
             fontSize={fontSize}
             fontWeight={fontWeight}
             textDecoration={textDecoration}
             margin={margin}
             padding={padding}
+            cursor={cursor}
+            onClick={onClick}
             {...props}
         >
             {children}
-        </StyledText>
+        </StyledTitle>
     );
 }
 
