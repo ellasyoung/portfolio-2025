@@ -9,6 +9,7 @@ export const Row = styled.div`
 export const HeroContainer = styled.div`
     display: flex;
     flex-direction: column;
+    background-color: blue;
     height: 100vh;
 `;
 

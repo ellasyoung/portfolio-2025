@@ -5,10 +5,10 @@ import Button from "../../../../../common/Button";
 import Text from "../../../../../common/text/Text"
 
 const links = [
-    {name: "about", section: "#about"},
-    {name: "experience", section: "#experience"},
-    {name: "projects", section: "#projects"},
-    {name: "contact", section: "#contact"}
+    {name: "about"},
+    {name: "experience"},
+    {name: "projects"},
+    {name: "contact"}
 ];
 
 const NavCol = () => {
@@ -39,7 +39,7 @@ const NavCol = () => {
                                 height="40px"
                                 margin="0 0 25px 0"
                                 justifyContent="flex-start"
-                                onClick={() => navLinkOnClick(link.section.substring(1))}
+                                onClick={() => navLinkOnClick(link.name)}
                             >
                                 <Text margin="0 0 0 20px">{link.name}</Text>
                             </Button>

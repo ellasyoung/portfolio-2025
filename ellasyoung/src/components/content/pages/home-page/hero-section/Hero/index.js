@@ -5,7 +5,7 @@ import {HeroContainer, Row, Title} from "./HeroElements";
 
 const Hero = () => {
     return (
-        <HeroContainer>
+        <HeroContainer id="hero">
 
         </HeroContainer>
     );

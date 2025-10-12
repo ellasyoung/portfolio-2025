@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { offWhite, black, shadowLight, shadowDark } from "../../../../../../constants/colors";
-import Button from "../../../../../common/Button";
 
 export const Logo = styled.a`
     font-family: 'Bungalow', sans-serif;
