@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { NavCont, NavLinks } from "./NavColElements";
+import {ButtonRow, NavCont, NavLinks} from "./NavColElements";
 
 import Container from "../../../../../common/Container";
 import Button from "../../../../../common/Button";
 import Text from "../../../../../common/text/Text"
 import Title from "../../../../../common/text/Title";
+import GitHubIcon from "../../../../../../assets/icons/GitHubIcon";
+import LinkedInIcon from "../../../../../../assets/icons/LinkedInIcon";
 
 const links = [
     {name: "hero"},
@@ -24,6 +26,10 @@ const NavCol = () => {
             section.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
+    const externalLinkOnClick = (url) => {
+        window.open(url, '_blank');
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -50,7 +56,7 @@ const NavCol = () => {
                 width="16%"
                 minWidth="180px"
                 height="92vh"
-                minHeight="450px"
+                minHeight="530px"
                 margin="35px"
                 position="fixed"
                 zIndex="1000"
@@ -79,6 +85,23 @@ const NavCol = () => {
                             </Button>
                         ))}
                     </NavLinks>
+                    <ButtonRow>
+                        <Button
+                            height="40px"
+                            width="40px"
+                            margin="0 20px 0 0"
+                            onClick={() => externalLinkOnClick("https://github.com/ellasyoung")}
+                        >
+                            <GitHubIcon/>
+                        </Button>
+                        <Button
+                            height="40px"
+                            width="40px"
+                            onClick={() => externalLinkOnClick("https://linkedin.com/in/ellasyoung")}
+                        >
+                            <LinkedInIcon/>
+                        </Button>
+                    </ButtonRow>
                 </NavCont>
             </Container>
     );

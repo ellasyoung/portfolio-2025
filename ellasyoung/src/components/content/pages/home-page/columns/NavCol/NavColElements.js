@@ -12,3 +12,12 @@ export const NavLinks = styled.div`
     align-items: center;
     width: 100%;
 `;
+
+export const ButtonRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    position: absolute;
+    bottom: 50px;
+    left: 15%;
+`;
