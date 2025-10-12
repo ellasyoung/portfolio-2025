@@ -5,8 +5,7 @@ import Container from "../../../../../common/Container";
 import Button from "../../../../../common/Button";
 import Text from "../../../../../common/text/Text"
 import Title from "../../../../../common/text/Title";
-import GitHubIcon from "../../../../../../assets/icons/GitHubIcon";
-import LinkedInIcon from "../../../../../../assets/icons/LinkedInIcon";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const links = [
     {name: "hero"},
@@ -53,8 +52,7 @@ const NavCol = () => {
 
     return (
             <Container 
-                width="16%"
-                minWidth="180px"
+                width="230px"
                 height="92vh"
                 minHeight="530px"
                 margin="35px"
@@ -63,7 +61,7 @@ const NavCol = () => {
             >
                 <NavCont>
                     <Title
-                        margin="0 0 35px 55px"
+                        margin="0 0 35px 0"
                         fontSize="90px"
                         cursor="pointer"
                         onClick={() => navLinkOnClick(links[0].name)}
@@ -81,7 +79,7 @@ const NavCol = () => {
                                 onClick={() => navLinkOnClick(link.name)}
                                 isActive={activeSection === link.name}
                             >
-                                <Text margin="0 0 0 20px">{link.name}</Text>
+                                <Text spacing="2px" margin="0 0 0 20px">{link.name}</Text>
                             </Button>
                         ))}
                     </NavLinks>
@@ -92,14 +90,14 @@ const NavCol = () => {
                             margin="0 20px 0 0"
                             onClick={() => externalLinkOnClick("https://github.com/ellasyoung")}
                         >
-                            <GitHubIcon/>
+                            <FaGithub size="22"/>
                         </Button>
                         <Button
                             height="40px"
                             width="40px"
                             onClick={() => externalLinkOnClick("https://linkedin.com/in/ellasyoung")}
                         >
-                            <LinkedInIcon/>
+                            <FaLinkedinIn size="20"/>
                         </Button>
                     </ButtonRow>
                 </NavCont>

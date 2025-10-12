@@ -1,6 +1,6 @@
 import { Column } from "./BodyColElements";
 import Hero from "../../hero-section/Hero";
-import About from "../../about-section";
+import About from "../../about-section/About";
 import Experience from "../../experience-section";
 import Projects from "../../projects-section";
 import Contact from "../../contact-section";

@@ -5,7 +5,9 @@ export const StyledText = styled.p`
     font-size: ${props => props.fontSize || '12px'};
     font-weight: ${props => props.fontWeight || 'normal'};
     text-decoration: ${props => props.textDecoration || 'none'};
-    letter-spacing: 2px;
+    
+    letter-spacing: ${props => props.spacing || '0px'};
+    line-height: ${props => props.lineHeight || '1.5'};
     
     margin: ${props => props.margin || '0px'};
     padding: ${props => props.padding || '0px'};
