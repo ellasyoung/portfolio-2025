@@ -20,3 +20,9 @@ export const ButtonRow = styled.div`
     position: absolute;
     bottom: 50px;
 `;
+
+export const NavColWrapper = styled.div`
+    @media (max-width: 600px) {
+        display: none;
+    }
+`;

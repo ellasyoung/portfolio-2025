@@ -8,4 +8,8 @@ export const Column = styled.div`
     z-index: 1;
     display: flex;
     flex-direction: column;
+    
+    @media (max-width: 1280px) {
+        width: 580px;
+    }
 `;

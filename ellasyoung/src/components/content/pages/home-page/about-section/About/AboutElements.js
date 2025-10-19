@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { offWhite, black, shadowLight, shadowDark } from "../../../../../../constants/colors";
+import { offWhite, shadowLight, shadowDark } from "../../../../../../constants/colors";
 import { ReactComponent as AboutContainerSVG } from "../../../../../../assets/shapes/about-container.svg"
+import { ReactComponent as AboutContainerMdSVG } from "../../../../../../assets/shapes/about-container-md.svg";
 
 export const AboutContainer = styled.div`
     position: relative;
@@ -56,17 +57,52 @@ export const TextBlock = styled.div`
     &.first {
         width: 630px;
     }
+    
+    &.lg {
+        display: block;
+    }
+    
+    &.md {
+        display: none;
+    }
+    
+    @media (max-width: 1280px) {
+        &.lg {
+            display: none;
+        }
+        &.md {
+            display: block;
+            width: 480px;
+        }
+    }
+    
 `;
 
 export const TextContainer = styled.div`
     position: absolute;
     top: 60px;
     left: 50px;
+    z-index: 2;
 `;
 
 export const AboutTxtContainer = styled(AboutContainerSVG)`
     fill: ${offWhite};
     filter: drop-shadow(-6px 6px 10px ${shadowLight}) drop-shadow(6px -3px 4px ${shadowDark});
+    display: block;
+
+    @media (max-width: 1280px) {
+        display: none;
+    }
+`;
+
+export const AboutTxtContainerMd = styled(AboutContainerMdSVG)`
+    display: none;
+
+    @media (max-width: 1280px) {
+        display: block;
+        fill: ${offWhite};
+        filter: drop-shadow(-6px 6px 10px ${shadowLight}) drop-shadow(6px -3px 4px ${shadowDark});
+    }
 `;
 
 export const StyledLink = styled.a`

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {ButtonRow, NavCont, NavLinks} from "./NavColElements";
+import {ButtonRow, NavCont, NavLinks, NavColWrapper} from "./NavColElements";
 
 import Container from "../../../../../common/Container";
 import Button from "../../../../../common/Button";
@@ -51,6 +51,7 @@ const NavCol = () => {
     }, []);
 
     return (
+        <NavColWrapper>
             <Container 
                 width="230px"
                 height="92vh"
@@ -69,7 +70,7 @@ const NavCol = () => {
                         ey
                     </Title>
                     <NavLinks>
-                        {links.map((link, index) => index != 0 && (
+                        {links.map((link, index) => index !== 0 && (
                             <Button
                                 key={index}
                                 width="70%"
@@ -79,7 +80,12 @@ const NavCol = () => {
                                 onClick={() => navLinkOnClick(link.name)}
                                 isActive={activeSection === link.name}
                             >
-                                <Text spacing="2px" margin="0 0 0 20px">{link.name}</Text>
+                                <Text
+                                    spacing="2px"
+                                    margin="0 0 0 20px"
+                                    fontWeight="bold">
+                                    {link.name}
+                                </Text>
                             </Button>
                         ))}
                     </NavLinks>
@@ -102,6 +108,7 @@ const NavCol = () => {
                     </ButtonRow>
                 </NavCont>
             </Container>
+        </NavColWrapper>
     );
 };
 

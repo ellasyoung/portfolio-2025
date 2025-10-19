@@ -10,4 +10,9 @@ export const ContentContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: 1280px;
+    
+    @media (max-width: 1280px) {
+        width: 900px;
+    }
+    
 `;
