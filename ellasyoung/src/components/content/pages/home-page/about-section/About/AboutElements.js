@@ -66,13 +66,19 @@ export const TextBlock = styled.div`
         display: none;
     }
     
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
         &.lg {
             display: none;
         }
         &.md {
             display: block;
             width: 480px;
+        }
+
+        @media (max-width: 670px) {
+            &.md {
+                display: none;
+            }
         }
     }
     
@@ -90,7 +96,7 @@ export const AboutTxtContainer = styled(AboutContainerSVG)`
     filter: drop-shadow(-6px 6px 10px ${shadowLight}) drop-shadow(6px -3px 4px ${shadowDark});
     display: block;
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
         display: none;
     }
 `;
@@ -98,11 +104,16 @@ export const AboutTxtContainer = styled(AboutContainerSVG)`
 export const AboutTxtContainerMd = styled(AboutContainerMdSVG)`
     display: none;
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
         display: block;
         fill: ${offWhite};
         filter: drop-shadow(-6px 6px 10px ${shadowLight}) drop-shadow(6px -3px 4px ${shadowDark});
     }
+
+    @media (max-width: 670px) {
+        display: none;
+    }
+    
 `;
 
 export const StyledLink = styled.a`

@@ -9,7 +9,16 @@ export const Column = styled.div`
     display: flex;
     flex-direction: column;
     
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
         width: 580px;
+    }
+
+    @media (max-width: 920px) {
+        width: 580px;
+        margin-left: 35px;
+    }
+
+    @media (max-width: 670px) {
+        width: 90%;
     }
 `;
