@@ -4,6 +4,7 @@ import { black } from "../../../../constants/colors";
 export const StyledText = styled.p`
     font-size: ${props => props.fontSize || '12px'};
     font-weight: ${props => props.fontWeight || 'normal'};
+    font-style: ${props => props.fontStyle || 'normal'};
     text-decoration: ${props => props.textDecoration || 'none'};
     
     letter-spacing: ${props => props.spacing || '0px'};
