@@ -83,7 +83,7 @@ const NavCol = () => {
                                 <Text
                                     spacing="2px"
                                     margin="0 0 0 20px"
-                                    fontWeight="bold">
+                                >
                                     {link.name}
                                 </Text>
                             </Button>

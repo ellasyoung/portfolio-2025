@@ -2,10 +2,17 @@ import styled from "styled-components";
 import { offWhite, shadowLight, shadowDark } from "../../../../../../constants/colors";
 import { ReactComponent as AboutContainerSVG } from "../../../../../../assets/shapes/about-container.svg"
 import { ReactComponent as AboutContainerMdSVG } from "../../../../../../assets/shapes/about-container-md.svg";
+import { ReactComponent as AboutContainerSmSVG } from "../../../../../../assets/shapes/about-container-sm.svg";
 
 export const AboutContainer = styled.div`
     position: relative;
     margin: 35px 0 35px 0;
+
+    @media (max-width: 670px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const Circle = styled.div`
@@ -20,6 +27,13 @@ export const Circle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 670px) {
+        width: 170px;
+        height: 170px;
+        position: relative;
+        box-shadow: -3px 3px 10px ${shadowLight}, 3px 0px 10px ${shadowDark};
+    }
 `;
 
 export const InnerCircle = styled.div`
@@ -49,6 +63,19 @@ export const InnerCircle = styled.div`
         height: 215px;
         cursor: pointer;
     }
+
+    @media (max-width: 670px) {
+        width: 140px;
+        height: 140px;
+        position: relative;
+
+        &:hover {
+            width: 140px;
+            height: 140px;
+            cursor: pointer;
+        }
+        
+    }
 `;
 
 export const TextBlock = styled.div`
@@ -66,6 +93,10 @@ export const TextBlock = styled.div`
         display: none;
     }
     
+    &.sm {
+        display: none;
+    }
+    
     @media (max-width: 1300px) {
         &.lg {
             display: none;
@@ -79,6 +110,11 @@ export const TextBlock = styled.div`
             &.md {
                 display: none;
             }
+            
+            &.sm {
+                width: 230px;
+                display: block;
+            }
         }
     }
     
@@ -89,6 +125,12 @@ export const TextContainer = styled.div`
     top: 60px;
     left: 50px;
     z-index: 2;
+
+    @media (max-width: 670px) {
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 `;
 
 export const AboutTxtContainer = styled(AboutContainerSVG)`
@@ -112,6 +154,18 @@ export const AboutTxtContainerMd = styled(AboutContainerMdSVG)`
 
     @media (max-width: 670px) {
         display: none;
+    }
+    
+`;
+
+export const AboutTxtContainerSm = styled(AboutContainerSmSVG)`
+    display: none;
+
+    @media (max-width: 670px) {
+        display: block;
+        fill: ${offWhite};
+        filter: drop-shadow(-6px 6px 10px ${shadowLight}) drop-shadow(6px -3px 4px ${shadowDark});
+        margin-top: -65px;
     }
     
 `;
