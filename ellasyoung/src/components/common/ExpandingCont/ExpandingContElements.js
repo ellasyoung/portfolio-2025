@@ -31,6 +31,9 @@ export const Row = styled.div`
         height: 100px;
         padding-left: 30px;
         padding-right: 30px;
+        @media (max-width: 670px) {
+            height: 120px;
+        }
     }
     
     &.company-button {
@@ -62,7 +65,7 @@ export const TechItem = styled.div`
     padding: 0px 25px;
     height: 40px;
     border-radius: 10px;
-    box-shadow: -2px 2px 6px ${shadowLight}, 2px 0px 6px ${shadowDark};
+    box-shadow: inset -3px 3px 6px ${shadowLight}, inset 3px 0px 6px ${shadowDark};
     background-color: ${offWhite};
     display: flex;
     align-items: center;
