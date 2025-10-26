@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
-import { Container as StyledContainer, Left, Right, Row, ExpandedContent } from './ExpandingContElements';
+import {
+    Container as StyledContainer,
+    Left,
+    Right,
+    Row,
+    ExpandedContent,
+    InnerContent,
+    TechContainer, TechItem
+} from './ExpandingContElements';
 import Text from '../text/Text'
 import Button from "../Button";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
-const ExpandingCont = ({ title, subtitle }) => {
+const ExpandingCont = ({ title, subtitle, blurb, dates, techList }) => {
 
     const [expanded, setExpanded] = useState(false);
 
@@ -33,7 +42,6 @@ const ExpandingCont = ({ title, subtitle }) => {
                     <Button
                         width="40px"
                         height="40px"
-                        margin="0 30px 0 0"
                         justifyContent="center"
                         onClick={toggleExpanded}
                     >
@@ -44,7 +52,23 @@ const ExpandingCont = ({ title, subtitle }) => {
             { expanded && (
                 <Row className="content-row">
                     <ExpandedContent>
-
+                        <InnerContent>
+                            <Text fontSize="16px" fontWeight="bold">{dates}</Text>
+                            <TechContainer>
+                                {techList?.map((tech, index) => (
+                                    <TechItem key={index}>
+                                        <Text fontWeight="bold">{tech}</Text>
+                                    </TechItem>
+                                ))}
+                            </TechContainer>
+                            <Text fontSize="14px">{blurb}</Text>
+                            <Row className="company-button">
+                                <Button height="40px" padding="0px 20px" gap="10px">
+                                    <Text fontSize="14px" fontWeight="bold">Learn more about {subtitle}</Text>
+                                    <FaArrowUpRightFromSquare size="12"/>
+                                </Button>
+                            </Row>
+                        </InnerContent>
                     </ExpandedContent>
                 </Row>)
             }

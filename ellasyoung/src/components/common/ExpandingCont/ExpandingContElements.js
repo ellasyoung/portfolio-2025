@@ -15,7 +15,6 @@ export const Container = styled.div`
 
 export const Left = styled.div`
     position: relative;
-    margin-left: 30px;
 `;
 
 export const Right = styled.div`
@@ -27,18 +26,44 @@ export const Row = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    width: 100%;
     
     &.title-row {
         height: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    &.company-button {
+        margin-top: 30px;
+        justify-content: flex-end;
     }
 `;
 
 export const ExpandedContent = styled.div`
-    height: 300px;
     margin: 0 30px 30px 30px;
     width: 100%;
     border-radius: 15px;
     box-shadow: inset -3px 3px 6px ${shadowLight}, inset 3px 0px 6px ${shadowDark};
+`;
+
+export const InnerContent = styled.div`
+    margin: 30px;
+`;
+
+export const TechContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    gap: 10px;
+`;
+
+export const TechItem = styled.div`
+    padding: 0px 25px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 6px ${shadowLight}, 2px 0px 6px ${shadowDark};
+    background-color: ${offWhite};
+    display: flex;
+    align-items: center;
 `;

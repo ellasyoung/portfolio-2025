@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button as StyledButton } from './ButtonElements';
 
-const Button = ({ width, height, borderRadius, margin, padding, children, justifyContent, onClick, isActive, ...props }) => {
+const Button = ({ width, height, borderRadius, margin, padding, children, justifyContent, onClick, isActive, gap, ...props }) => {
 
     return (
         <StyledButton
@@ -14,6 +14,7 @@ const Button = ({ width, height, borderRadius, margin, padding, children, justif
             justifyContent={justifyContent}
             onClick={onClick}
             isActive={isActive}
+            gap={gap}
             {...props}
         >
             {children}

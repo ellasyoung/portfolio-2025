@@ -11,6 +11,7 @@ export const Button = styled.div`
     display: flex;
     align-items: center;
     justify-content: ${props => props.justifyContent || 'center'};
+    gap: ${props => props.gap || '0px'};
     
     background-color: ${offWhite};
     color: ${black};

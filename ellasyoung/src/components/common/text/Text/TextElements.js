@@ -6,6 +6,7 @@ export const StyledText = styled.p`
     font-weight: ${props => props.fontWeight || 'normal'};
     font-style: ${props => props.fontStyle || 'normal'};
     text-decoration: ${props => props.textDecoration || 'none'};
+    text-transform: ${props => props.transform || 'none'};
     
     letter-spacing: ${props => props.spacing || '0px'};
     line-height: ${props => props.lineHeight || '1.5'};
