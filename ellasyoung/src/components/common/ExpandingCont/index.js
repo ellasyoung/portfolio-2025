@@ -13,13 +13,17 @@ import Button from "../Button";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
-const ExpandingCont = ({ title, subtitle, blurb, dates, techList }) => {
+const ExpandingCont = ({ title, subtitle, blurb, dates, techList, link }) => {
 
     const [expanded, setExpanded] = useState(false);
 
     const toggleExpanded = () => {
         setExpanded(!expanded);
     };
+
+    const externalLinkOnClick = (url) => {
+        window.open(url, '_blank');
+    }
 
     return (
         <StyledContainer>
@@ -63,7 +67,12 @@ const ExpandingCont = ({ title, subtitle, blurb, dates, techList }) => {
                             </TechContainer>
                             <Text fontSize="14px">{blurb}</Text>
                             <Row className="company-button">
-                                <Button height="40px" padding="0px 20px" gap="10px">
+                                <Button
+                                    height="40px"
+                                    padding="0px 20px"
+                                    gap="10px"
+                                    onClick={() => externalLinkOnClick(link)}
+                                >
                                     <Text fontSize="14px" fontWeight="bold">Learn more about {subtitle}</Text>
                                     <FaArrowUpRightFromSquare size="12"/>
                                 </Button>

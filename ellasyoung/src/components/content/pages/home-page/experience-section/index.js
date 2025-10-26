@@ -15,6 +15,7 @@ const Experience = () => {
                     intuitive user experience."
                     dates="February 2025 - Present"
                     techList={["Java", "SQL", "React", "TypeScript", "JavaScript", "SCSS"]}
+                    link={"https://www.ukg.com/"}
                 ></ExpandingCont>
                 <ExpandingCont
                     title="Software Engineer Intern"
@@ -24,6 +25,7 @@ const Experience = () => {
                     a document-oriented database system, secure APIs, and an interactive dashboard to meet client needs."
                     dates="June 2024 - August 2024"
                     techList={["MongoDB", "Node.js", "Express.js", "React", "JavaScript", "Tailwind CSS"]}
+                    link={"https://www.publicissapient.com/"}
                 ></ExpandingCont>
                 <ExpandingCont
                     title="Software Developer Intern"
@@ -31,9 +33,10 @@ const Experience = () => {
                     blurb="Optimized the conversational chatbot tooling platform Nuance Mix Dialog by integrating
                     Microsoft Copilot to reduce the manual development workload. Enhanced Mix’s user interface,
                     building new components using React, TypeScript, and Redux with a focus on accessible design and
-                    user experience."
+                    user experience. Nuance Communications was acquired by Microsoft in 2022."
                     dates="May 2023 - August 2023"
                     techList={["React", "TypeScript", "JavaScript", "CSS"]}
+                    link={"https://www.cnbc.com/2021/04/12/microsoft-buys-nuance-communications-in-16-billion-deal.html?msockid=0408db9db39e69d7055fce30b259682f"}
                 >
                 </ExpandingCont>
             </List>
