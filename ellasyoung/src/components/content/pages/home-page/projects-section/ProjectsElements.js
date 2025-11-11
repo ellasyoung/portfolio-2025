@@ -4,6 +4,21 @@ import { offWhite, black, shadowLight, shadowDark } from "../../../../../constan
 export const ProjectsContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: orange;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 35px 0 35px 0;
+    width: 100%;
 `;
+
+export const List = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    @media (max-width: 670px) {
+        width: 300px;
+    }
+`
