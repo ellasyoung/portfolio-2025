@@ -3,16 +3,23 @@ import {Container, ProjectImage, Row, TitleCont, TitleTextCont} from './PopUpBut
 import Text from '../text/Text'
 import {FaGithub} from "react-icons/fa6";
 import Button from "../Button";
+import PopUp from "../PopUp";
 
 const PopUpButton = ({title, subtitle, imgsrc, link}) => {
+
+    const [showPopUp, setShowPopUp] = useState(false);
 
     const externalLinkOnClick = (url) => {
         window.open(url, '_blank');
     }
 
+    const togglePopUp = () => {
+        setShowPopUp(!showPopUp);
+    }
+
     return (
         <>
-            <Container>
+            <Container onClick={togglePopUp}>
                 <Row>
                     <ProjectImage src={imgsrc}/>
                     <TitleCont>
@@ -32,6 +39,9 @@ const PopUpButton = ({title, subtitle, imgsrc, link}) => {
                     </TitleCont>
                 </Row>
             </Container>
+            {showPopUp && (
+                <PopUp closePopUp={togglePopUp}/>
+            )}
         </>
     );
 };

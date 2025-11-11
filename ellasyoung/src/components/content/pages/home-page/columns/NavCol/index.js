@@ -58,7 +58,7 @@ const NavCol = () => {
                 minHeight="530px"
                 margin="35px 35px 35px 0"
                 position="fixed"
-                zIndex="1000"
+                zIndex="100"
             >
                 <NavCont>
                     <Title
