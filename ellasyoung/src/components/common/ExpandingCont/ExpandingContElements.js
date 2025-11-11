@@ -51,18 +51,37 @@ export const ExpandedContent = styled.div`
 
 export const InnerContent = styled.div`
     margin: 30px;
+    
+    .full-txt {
+        display: inline;
+    }
+
+    .part-txt {
+        display: none;
+    }
+
+    @media (max-width: 670px) {
+        .full-txt {
+            display: none;
+        }
+
+        .part-txt {
+            display: inline;
+        }
+    }
 `;
 
 export const TechContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 15px 0;
     gap: 10px;
 `;
 
 export const TechItem = styled.div`
-    padding: 0px 25px;
+    padding: 0 25px;
     height: 40px;
     border-radius: 10px;
     box-shadow: inset -3px 3px 6px ${shadowLight}, inset 3px 0px 6px ${shadowDark};

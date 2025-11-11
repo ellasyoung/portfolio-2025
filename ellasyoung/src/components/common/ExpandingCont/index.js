@@ -73,7 +73,8 @@ const ExpandingCont = ({ title, subtitle, blurb, dates, techList, link }) => {
                                     gap="10px"
                                     onClick={() => externalLinkOnClick(link)}
                                 >
-                                    <Text fontSize="14px" fontWeight="bold">Learn more about {subtitle}</Text>
+                                    <Text fontSize="14px" fontWeight="bold" className="full-txt">Learn more about {subtitle}</Text>
+                                    <Text fontSize="14px" fontWeight="bold" className="part-txt">{subtitle}</Text>
                                     <FaArrowUpRightFromSquare size="12"/>
                                 </Button>
                             </Row>
